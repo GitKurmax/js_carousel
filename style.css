@@ -1,0 +1,58 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 150px;
+  border: 1px solid gray;
+  border-radius: 15px;
+  background: lightgray;
+}
+
+.img_wrapper {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 390px;
+  overflow: hidden;
+ 
+}
+
+.scroll {
+  position: relative;
+  display: flex;
+  left: 0;
+  justify-content: start;
+  align-items: center;
+  transition: .3s;
+}
+
+.arrow {
+  font-size: 28px;
+  color: rgb(66, 66, 66);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  line-height: 20px;
+  text-align: center;
+}
+
+.arrow:hover {
+  cursor: pointer;
+}
+
+.left {
+  left: 15px;
+}
+
+.right {
+  right: 15px;
+}
+
+
