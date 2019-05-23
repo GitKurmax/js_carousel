@@ -1,23 +1,23 @@
-let leftArrrow = document.querySelector('.left');
-let rightArrrow = document.querySelector('.right');
-let elemToScroll = document.querySelector('.scroll');
+const elemToScroll = document.querySelector('.scroll');
+const imgContainer = document.querySelector('.img_wrapper');
+const imgAmount = imgContainer.querySelectorAll('.img');
+const imgWidth = imgContainer.querySelector('img').offsetWidth;
 let x = 0;
 let left;
 
-leftArrrow.onclick = scroll(event, elemToScroll);
-rightArrrow.onclick = scroll(event, elemToScroll);
+document.querySelector('.wrapper').addEventListener('click', scroll(elemToScroll));
 
-function scroll(event, elem) {
+function scroll(elem) {
   return function (event) {
     if (event.target.classList.contains('left')){
-      left = x - 390;
+      left = x - imgContainer.offsetWidth;
       if (left < -910) {
         left = -910;
       }
       elem.style.left = left + "px";
       x = left;
-    } else {
-      left = x + 390;
+    } else if (event.target.classList.contains('right')) {
+      left = x + imgContainer.offsetWidth;
       if (left >= 0) {
         left = 0;
       }
