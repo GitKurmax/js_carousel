@@ -13,6 +13,7 @@ body {
   border: 1px solid gray;
   border-radius: 15px;
   background: lightgray;
+  user-select: none;
 }
 
 .img_wrapper {
@@ -21,7 +22,6 @@ body {
   align-items: center;
   width: 390px;
   overflow: hidden;
- 
 }
 
 .scroll {
@@ -53,6 +53,10 @@ body {
 
 .right {
   right: 15px;
+}
+
+.disabled {
+  opacity: 0.5;
 }
 
 
