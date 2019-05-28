@@ -28,7 +28,6 @@ body {
   position: relative;
   display: flex;
   left: 0;
-  justify-content: start;
   align-items: center;
   transition: .3s;
 }
@@ -56,7 +55,8 @@ body {
 }
 
 .disabled {
-  opacity: 0.5;
+  pointer-events: none;
+  opacity: .5;
 }
 
 
