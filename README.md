@@ -1,2 +1,3 @@
 # js_carousel
-https://gitkurmax.giphub.io/js_carousel
+https://gitkurmax.github.io/js_carousel
+
